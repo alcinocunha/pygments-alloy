@@ -3,25 +3,25 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='pygments-electrum',
-    version='0.1',
-    description='Pygments lexer for Electrum.',
-    keywords='pygments electrum alloy lexer',
+    name='pygments-alloy',
+    version='0.2',
+    description='Pygments lexer for Alloy.',
+    keywords='pygments alloy lexer',
     license='GPL v2.0',
 
     author='Alcio Cunha',
     author_email='alcino@di.uminho.pt',
 
-    url='https://github.com/alcinocunha/pygments-electrum.git',
+    url='https://github.com/alcinocunha/pygments-alloy.git',
 
     packages=find_packages(),
     install_requires=['pygments >= 1.4'],
 
     entry_points='''[pygments.lexers]
-                    electrum=src:ElectrumLexer
+                    alloy=src:AlloyLexer
     
                     [pygments.styles]
-                    electrum=src:ElectrumStyle''',
+                    alloy=src:AlloyStyle''',
 
     classifiers=[],
 )
