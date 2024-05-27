@@ -51,10 +51,10 @@ Other outputed tokens are
                          that the single quotation mark may appear anywhere except at the
                          beginning)
 """
-class ElectrumLexer(RegexLexer):
-    name = 'Electrum'
-    aliases = ['electrum']
-    filenames = ['*.als','.ele']
+class AlloyLexer(RegexLexer):
+    name = 'Alloy'
+    aliases = ['alloy']
+    filenames = ['*.als']
 
     iden_rex = r'\$?[a-zA-Z_][a-zA-Z0-9_]*\$?'
     text_tuple = (r'[^\S\n]+', Text)
@@ -132,7 +132,7 @@ the Alloy Analyzer.  The only differences are:
   * in this style, multiline doc comments (starting with '/**') are not bold
     (because the lexer outputs the same token for both kinds of multiline comments)
 """
-class ElectrumStyle(Style):
+class AlloyStyle(Style):
     default_style = ""
 
     styles = {}
