@@ -56,7 +56,7 @@ class AlloyLexer(RegexLexer):
     aliases = ['alloy']
     filenames = ['*.als']
 
-    iden_rex = r'\$?[a-zA-Z_][a-zA-Z0-9_]*\$?'
+    iden_rex = r'\$?[a-zA-Z_][a-zA-Z0-9_]*[₀-₋ₐ-ₜ\$]*'
     text_tuple = (r'[^\S\n]+', Text)
 
     tokens = {
